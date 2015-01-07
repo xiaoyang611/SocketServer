@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<log-config  file="" level="INFO" />
+	
+	<servers>
+		<server>
+			<port value="12121" />
+			<pool minThread="5" maxThread="20" />
+			<interceptors>
+				<interceptor class="xiaoyang.server.interceptor.DefaultInterceptor" />
+			</interceptors>
+			<serverHandler class="xiaoyang.server.sample.longconnect.LongconnetServerHandler" />
+		</server>
+	</servers>
+	
+</config>
